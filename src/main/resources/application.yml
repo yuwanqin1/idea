@@ -1,0 +1,44 @@
+server:
+  port: 8081
+
+person:
+  name: 张三
+  age: 10
+  boss: false
+  birth: 2017/12/12
+  maps: { k1: v1, k2: v2 }
+  lists:
+    - lisi
+    - zhangsan
+  dog:
+    name: 小狗
+    age: 11
+
+#  xml：<server><port>8081</port></server>
+
+#yml基本语法
+#    k: v表示一对键值对（必须要有一个空格）
+#    以空格的缩进来控制层级关系，只要是左对齐一列数据，都是同一级的我
+#值的写法
+#字面量数据类型:普通的值(数字，字符串，布尔)
+#    k: v字面量直接来写
+#        字符串默认不用加上单引号或则双引号
+#        "":双引号:不会转义字符串里面的特殊字符,特殊字符会作为本省想表达的意思
+#            name:"zhangsna \n lisi"：输出:张三 换行 lisi
+#        '':单引号:会转义特殊字符，特殊字符最终只是一个普通的字符串数据
+#            name:'zhangsna \n lisi'：输出:张三 \n lisi
+#对象,map(属性和值)(键值对)
+#    k: v;
+#        对象还是k: v的方式
+#            例:friends：
+#                  lastName: zhangsan
+#                  san: 20
+#            例:行内写法
+#              friends：{ lastName: zhangsan, san: 20 }
+#        数组:(List, Set)
+#            例:pets:
+#                - cat
+#                - dog
+#                - pig
+#            例:
+#              行内写法pets: [cat,dog,pig]

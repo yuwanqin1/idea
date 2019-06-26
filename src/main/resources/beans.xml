@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans">
+<!--自定义配置文件
+    需要哪里使用通过: @ImportResource(locations = "{classpath: beans.xml}") 进行引入使用
+-->
+</beans>
